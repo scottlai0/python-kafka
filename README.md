@@ -15,8 +15,11 @@ Within the directory:
 
 <hr>
 
-### Producer Overview
-<img src="./img/producer_flow.png" title="Kafka Producer Overview">
+### Producer
+<details>
+  <h4>Producers Influence Throughput via Partitions</h4>
+  <img src="./img/producer_flow.png" title="Kafka Producer Overview">
+</details>
 
 ## Using Python
 Start the Kafka Python file ```main.py``` using 
