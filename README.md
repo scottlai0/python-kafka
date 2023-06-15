@@ -21,6 +21,12 @@ Start the Kafka Python file ```main.py``` using
 > uvicorn main:app --reload
 ```
 
+Start a Consumer in console
+```
+> docker exec -it cli-tools kafka-console-consumer --bootstrap-server broker0:29092 --topic people.basic.python
+```
+
+
 <hr>
 
 ## Using Command Line
