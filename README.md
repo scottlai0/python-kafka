@@ -11,6 +11,8 @@
 > docker-composer down -v
 ```
 
+<hr>
+
 # Admin Api:
 ## Topic Management via CLI within dockerized environment
 ```
