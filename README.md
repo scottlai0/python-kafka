@@ -18,13 +18,13 @@ Within the directory:
 <details>
   <summary><h2>Producer</h2></summary>
   
-  <h4>Producers Influence Throughput via Partitions</h4>
+  <h3>Producers Influence Throughput via Partitions</h3>
   Producer client applications influence Kafka throughput scalability by distributing messages they produce across the available partitions assigned to the topic they are writing to.
 
   <br>
   <br>
 
-  Two Methods for Dsitributing Messages across Topic Partitions:
+  <h4>Two Methods for Distributing Messages across Topic Partitions:</h4>
   <details>
     <summary><b>Message Key Hashing Algorithm</b></summary>
     <ul>
