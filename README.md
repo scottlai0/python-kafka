@@ -33,6 +33,8 @@
   * ```batch.size```: By default, one record is sent at a time. ```batch.size``` can be changed to better utilize compute and network resources.  
   * ```enable.idempotence```: To prevent duplication of the same data due to Producer-Broker connection issues, set ```enable.idempotence = 1```
   * ```max.in.inflight.request.per.connection```: If data sequence is important, set ```max.in.inflight.request.per.connection = 1```
+  * ```retries```: defaulted to a reasonably significant value
+  * ```delivery.timeout.ms```: defaulted to a reasonably significant value
 </details>
 
 <details>
