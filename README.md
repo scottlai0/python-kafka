@@ -1,15 +1,16 @@
 # Getting Started:
+Within the directory:
 ### Start up docker-composer
 ```
-docker-composer up -d
+> docker-composer up -d
 ```
 ### Show state of composer
 ```
-docker-compose ps
+> docker-compose ps
 ```
 ### Turn off docker environment
 ```
-docker-composer down -v
+> docker-composer down -v
 ```
 
 <hr>
@@ -29,17 +30,17 @@ List Topics inside the Kafka environment
 ### Create Topic
 Listing the partition and replication number will override the value specified inside the ```docker-composer.yml```
 ```
-docker exec -it cli-tools kafka-topics --boostrap-server --create broker0:29092 --topic people --partitions 3 --replication-factor 3
+> docker exec -it cli-tools kafka-topics --boostrap-server --create broker0:29092 --topic people --partitions 3 --replication-factor 3
 ```
 
 ### Describe Topics
 ```
-docker exec -it cli-tools kafka-topics --boostrap-server --describe broker0:29092 --topic people
+> docker exec -it cli-tools kafka-topics --boostrap-server --describe broker0:29092 --topic people
 ```
 
 ### Delete Topics 
 ```
-docker exec -it cli-tools kafka-topics --boostrap-server --delete broker0:29092 --topic people
+> docker exec -it cli-tools kafka-topics --boostrap-server --delete broker0:29092 --topic people
 ```
 
 ### Create Topic with different retention
@@ -50,19 +51,19 @@ docker exec -it cli-tools kafka-topics --boostrap-server broker0:29092 --topic e
 
 ### Describe configs
 ```
-docker exec -it cli-tools kafka-configs --boostrap-server broker0:29092 --describe -- all --topic experiments
+> docker exec -it cli-tools kafka-configs --boostrap-server broker0:29092 --describe -- all --topic experiments
 ```
 
 ### Change Retention of a Topic
 Default retention periond is 2 weeks.
 ```
-docker exec -it cli-tools kafka-configs --boostrap-server broker0:29092 --alter --entity-type topics --entity-name experiments --add-config retention.ms=500000
+> docker exec -it cli-tools kafka-configs --boostrap-server broker0:29092 --alter --entity-type topics --entity-name experiments --add-config retention.ms=500000
 ```
 
 ### Create compacted Topic 
 Topic name = experiments.latest (different name from experiments)
 ```
-docker exec -it cli-tools kafka-topics --boostrap-server broker0:29092 --create --topic experiments.latest -config cleanup.policy=compact
+> docker exec -it cli-tools kafka-topics --boostrap-server broker0:29092 --create --topic experiments.latest -config cleanup.policy=compact
 ```
 
 <hr>
@@ -71,18 +72,22 @@ docker exec -it cli-tools kafka-topics --boostrap-server broker0:29092 --create 
 ## Using Command Line:
 ### Start Producer
 ```
-docker exec -it cli-tools kafka-console-producer --bootstrap-server broker0:29092 --topic people
+> docker exec -it cli-tools kafka-console-producer --bootstrap-server broker0:29092 --topic people
 ```
 ### Start Consumer
 ```
-docker exec -it cli-tools kafka-console-consumer --bootstrap-server broker0:29092 --topic people --from-beginning
+> docker exec -it cli-tools kafka-console-consumer --bootstrap-server broker0:29092 --topic people --from-beginning
 ```
 Within Producer CLI, try typing the following:
+```
+> {"name":"Martin Fowler", "title":"Chief Scientist"}
+> {"name":"Zhamak Dehghani", "title":"Direct Tech Innovation"}
+```
+The consumer CLI should reflect the changes accordingly.
 ```
 {"name":"Martin Fowler", "title":"Chief Scientist"}
 {"name":"Zhamak Dehghani", "title":"Direct Tech Innovation"}
 ```
-The consumer CLI should reflect the changes accordingly.
 
 <br>
 
@@ -93,6 +98,15 @@ Include Keys
 ```
 ### Start Consumer
 ```
-docker exec -it cli-tools kafka-console-consumer --bootstrap-server broker0:29092 --topic people --from-beginning
+> docker exec -it cli-tools kafka-console-consumer --bootstrap-server broker0:29092 --topic people --from-beginning --property "print.key=true"
 ```
-
+Including key-value in the Producer will be:
+```
+> chief-scientist|{"name":"Martin Fowler", "title":"Chief Scientist"}
+> director-tech-innovation|{"name":"Zhamak Dehghani", "title":"Direct Tech Innovation"}
+```
+The Consumer console will print the following:
+```
+chief-scientist  {"name":"Martin Fowler", "title":"Chief Scientist"}
+director-tech-innvation  {"name":"Zhamak Dehghani", "title":"Direct Tech Innovation"}
+```
