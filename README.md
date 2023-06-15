@@ -29,12 +29,9 @@ Within the directory:
     <li>
       <details>
         <summary>Message Key Hashing Algorithm</summary>
-        
-        <ul>
           <li>If a message key is specified then the producer client performs a hash based calculation for aprtition assignment</li>
           <li>hash(key) % num partitions</li>
           <li>All messages that share the same key will be colocated in the same partition maintained in order of arrival to Kafka</li>
-        </ul>          
       </details>
     </li>
     <li>Round Robin</li>
