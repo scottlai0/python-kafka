@@ -71,8 +71,9 @@
 
 <hr>
 
-## Using Command Line
 <details>
+  <summary><h2>Using Command Line</h2></summary>
+  
   ### Topic Management via CLI within dockerized environment
   ```
   > docker-compose ps
