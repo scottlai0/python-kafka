@@ -43,7 +43,7 @@ Within the directory:
 <hr>
 
 ## Using Command Line
-<detail>
+<details>
   ### Topic Management via CLI within dockerized environment
   ```
   > docker-compose ps
@@ -139,4 +139,4 @@ Within the directory:
   chief-scientist  {"name":"Martin Fowler", "title":"Chief Scientist"}
   director-tech-innvation  {"name":"Zhamak Dehghani", "title":"Direct Tech Innovation"}
   ```
-</detail>
+</details>
