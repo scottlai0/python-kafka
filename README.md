@@ -51,6 +51,7 @@ Listing the partition and replication number will override the value specified i
 ```
 
 ### Change Retention of a Topic
+Default retention periond is 2 weeks.
 ```
 > docker exec -it cli-tools kafka-configs --boostrap-server broker0:29092 --alter --entity-type topics --entity-name experiments --add-config retention.ms=500000
 ```
