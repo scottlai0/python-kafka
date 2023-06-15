@@ -24,11 +24,10 @@
   
   <img src="./img/producer_high_level.png" title="Kafka Producer">
 
-  <details open>
-    <summary><h3>Detailed Overview of Kafka Producer</h3></summary>
-    <img src="./img/producer_flow.png" title="Kafka Producer Overview">    
-  </details>
-
+<details open>
+<summary><h3>Detailed Overview of Kafka Producer</h3></summary>
+<img src="./img/producer_flow.png" title="Kafka Producer Overview">    
+  
 <b>Config Parameters:</b>
 * ```linger.ms```: recommended to set to preserve some resources (~100ms).
 
@@ -42,6 +41,9 @@
 * ```retries```: defaulted to a reasonably significant value
 
 * ```delivery.timeout.ms```: defaulted to a reasonably significant value
+  </details>
+
+
 
   
 </details>
