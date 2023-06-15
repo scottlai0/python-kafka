@@ -1,17 +1,20 @@
-# Getting Started:
-Within the directory:
-### Start up docker-composer
-```
-> docker-composer up -d
-```
-### Show state of composer
-```
-> docker-compose ps
-```
-### Turn off docker environment
-```
-> docker-composer down -v
-```
+
+<details>
+  <summary><h2>Getting Started</h2></summary>  
+  Within the directory:
+  ### Start up docker-composer
+  ```
+  > docker-composer up -d
+  ```
+  ### Show state of composer
+  ```
+  > docker-compose ps
+  ```
+  ### Turn off docker environment
+  ```
+  > docker-composer down -v
+  ```
+</details>
 
 <hr>
 
