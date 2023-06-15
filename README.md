@@ -15,7 +15,17 @@ Within the directory:
 
 <hr>
 
-# Admin Api:
+## Python
+Start the Kafka service using 
+```
+> uvicorn main:app --reload
+```
+
+<hr>
+
+## Using Command Line
+
+# Admin Api
 ### Topic Management via CLI within dockerized environment
 ```
 > docker-compose ps
@@ -27,16 +37,6 @@ List Topics inside the Kafka environment
 > docker exec -it cli-tools kafka-topics --boostrap-server --list broker0:29092,broker1:29093,broker2:29094
 ```
 
-## Python
-Start the Kafka service using 
-```
-> uvicorn main:app --reload
-```
-
-
-<hr>
-
-## Using Command Line
 ### Create Topic
 Listing the partition and replication number will override the value specified inside the ```docker-composer.yml```
 ```
