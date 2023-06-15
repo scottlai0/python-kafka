@@ -34,7 +34,8 @@
 * ```batch.size```: By default, one record is sent at a time. ```batch.size``` can be changed to better utilize compute and network resources.  
 
 * ```acks```: When data is written to a particular partition, by default, data will be replicated into the other replicas.
-  <br>```acks = 1``` will wait for leader to write the record to its local log only, ```acks = all``` for all brokers to be replicated (recommended)
+  <br>```acks = all``` for all brokers to be replicated (recommended)
+  <br>```acks = 1``` will wait for leader to write the record to its local log only
   <br>```acks = 0``` for ```jesus take the wheel``` to not wait for any acknowledgements and continue (data will be lost).
 * ```enable.idempotence```: To prevent duplication of the same data due to Producer-Broker connection issues, set ```enable.idempotence = 1```
 
