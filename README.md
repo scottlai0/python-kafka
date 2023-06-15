@@ -22,8 +22,7 @@
     </ul>
   </details>
   
-
-  <hr>
+  <img src="./img/producer_high_level.png" title="Kafka Producer">
   
   <img src="./img/producer_flow.png" title="Kafka Producer Overview">
 </details>
