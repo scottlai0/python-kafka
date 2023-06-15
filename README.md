@@ -43,6 +43,11 @@
 * ```delivery.timeout.ms```: defaulted to a reasonably significant value
 </details>
 
+<details open>
+  <summary><h2>Changing Partitions will Change Ordering</h2></summary>
+  <img src="./img/producer_changing_partitions.png" title="Kafka Producer: Changing Partitions">  
+</details>
+
 
 </details>
 
