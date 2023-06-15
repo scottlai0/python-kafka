@@ -31,7 +31,7 @@
   
   <li>To prevent duplication of the same data due to Producer-Broker connection issues, set ```enable.idempotence``` = 1</li>
   
-  <li>If data sequence is important, set ```max.in.inflight.request.per.connection``` = 1</li>
+  <li>If data sequence is important, set ```max.in.inflight.request.per.connection``` = 1 </li>
 </details>
 
 <details>
