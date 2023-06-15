@@ -56,6 +56,11 @@
 
 <details open>
   <summary><h2>Consumer</h2></summary>
+
+  <details>
+    <summary><h3>Consumer Group Offsets</h3></summary>
+     <img src="./img/consumer_group_offsets" title="Kafka Consumer: Consumer Group Offsets">  
+  </details>
   
 </details>
 
