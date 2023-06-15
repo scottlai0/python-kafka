@@ -22,7 +22,7 @@ Within the directory:
 </details>
 
 <details>
-  <summary>Using Python</summary>
+  <summary># Using Python</summary>
   
   Start the Kafka Python file ```main.py``` using 
   ```
