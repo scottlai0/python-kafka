@@ -29,19 +29,21 @@
     <img src="./img/producer_flow.png" title="Kafka Producer Overview">    
     <b>Config Parameters:</b>
     <br>
-    
-    * ```linger.ms```: recommended to set to preserve some resources (~100ms).
-    
-    * ```batch.size```: By default, one record is sent at a time. ```batch.size``` can be changed to better utilize compute and network resources.  
-    
-    * ```acks```: When data is written to a particular partition, by default, data will be replicated into the other replicas. ```acks = 1``` will ensure at least 1 broker to acknowledge that data replicated, ```acks = all``` for all brokers to be replicated (recommended), ```acks = 0``` for ```jesus take the wheel``` to not wait for any acknowledgements and continue (data will be lost).
-    * ```enable.idempotence```: To prevent duplication of the same data due to Producer-Broker connection issues, set ```enable.idempotence = 1```
-    
-    * ```max.in.inflight.request.per.connection```: If data sequence is important, set ```max.in.inflight.request.per.connection = 1```
-    
-    * ```retries```: defaulted to a reasonably significant value
-    
-    * ```delivery.timeout.ms```: defaulted to a reasonably significant value
+    <div>
+      * ```linger.ms```: recommended to set to preserve some resources (~100ms).
+      
+      * ```batch.size```: By default, one record is sent at a time. ```batch.size``` can be changed to better utilize compute and network resources.  
+      
+      * ```acks```: When data is written to a particular partition, by default, data will be replicated into the other replicas. ```acks = 1``` will ensure at least 1 broker to acknowledge that data replicated, ```acks = all``` for all brokers to be replicated (recommended), ```acks = 0``` for ```jesus take the wheel``` to not wait for any acknowledgements and continue (data will be lost).
+      * ```enable.idempotence```: To prevent duplication of the same data due to Producer-Broker connection issues, set ```enable.idempotence = 1```
+      
+      * ```max.in.inflight.request.per.connection```: If data sequence is important, set ```max.in.inflight.request.per.connection = 1```
+      
+      * ```retries```: defaulted to a reasonably significant value
+      
+      * ```delivery.timeout.ms```: defaulted to a reasonably significant value
+      
+    </div>
 
   </details>
   
