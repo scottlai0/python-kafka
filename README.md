@@ -10,7 +10,7 @@
   <details>
     <summary><b>Message Key Hashing Algorithm</b></summary>
     <ul>
-      <li><b>If a message key is specified</b> then the producer client performs a hash based calculation for aprtition assignment</li>
+      <li><u>If a message key is specified</u> then the producer client performs a hash based calculation for aprtition assignment</li>
       <li>hash(key) % num partitions</li>
       <li>All messages that share the same key will be colocated in the same partition maintained in order of arrival to Kafka</li>
     </ul>
