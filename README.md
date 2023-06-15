@@ -26,6 +26,11 @@ Start a Consumer in console
 > docker exec -it cli-tools kafka-console-consumer --bootstrap-server broker0:29092 --topic people.basic.python
 ```
 
+Calling a POST request configured in ```main.py```
+```
+> http POST :8088/api/people count:=3
+```
+The Consumer should should show any data if available.
 
 <hr>
 
