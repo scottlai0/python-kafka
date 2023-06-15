@@ -1,9 +1,15 @@
 ## Start up docker-composer
+```
 > docker-composer up -d
+```
 ## Show state of composer
+```
 > docker-compose ps
+```
 ## Turn off docker environment
+```
 > docker-composer down -v
+```
 
 # Admin Api:
 ## Topic Management via CLI within dockerized environment
