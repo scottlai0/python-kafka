@@ -151,6 +151,7 @@
   <br>
   
   <h3>Including Keys</h3>
+  
   ### Start Producer
   ```
   > docker exec -it cli-tools kafka-console-producer --bootstrap-server broker0:29092 --topic people --property "parse.key=true" --property "key.separator=|"
