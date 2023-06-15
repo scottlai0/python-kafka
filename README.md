@@ -23,6 +23,7 @@ Within the directory:
 
 <details>
   <summary>Using Python</summary>
+  
   Start the Kafka Python file ```main.py``` using 
   ```
   > uvicorn main:app --reload
