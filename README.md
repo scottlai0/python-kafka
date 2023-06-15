@@ -19,12 +19,24 @@ Within the directory:
   <summary><h2>Producer</h2></summary>
   
   <h4>Producers Influence Throughput via Partitions</h4>
-  Producer client applications influence Kafka throughput scalability by distributing messages they produce across the available partitions assigned to the topic they are writingt o.
+  Producer client applications influence Kafka throughput scalability by distributing messages they produce across the available partitions assigned to the topic they are writing to.
+
+  <br>
   <br>
 
   Two Methods for Dsitributing Messages across Topic Partitions:
   <ul>
-    <li>Message Key Hashing Algorithm</li>
+    <li>
+      <details>
+        <summary>Message Key Hashing Algorithm</summary>
+        
+        <ul>
+          <li>If a message key is specified then the producer client performs a hash based calculation for aprtition assignment</li>
+          <li>hash(key) % num partitions</li>
+          <li>All messages that share the same key will be colocated in the same partition maintained in order of arrival to Kafka</li>
+        </ul>          
+      </details>
+    </li>
     <li>Round Robin</li>
   </ul>
   
