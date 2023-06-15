@@ -58,10 +58,16 @@
   <summary><h2>Consumer</h2></summary>
 
   <details open>
-    <summary><h3>Consumer Group Offsets</h3></summary>
+    <summary><h3>Consumer Group Offsets and Progress Tracking</h3></summary>
      <img src="./img/consumer_group_offsets.png" title="Kafka Consumer: Consumer Group Offsets">  
   </details>
-  
+
+  <details open>
+    <summary><h3>Consumer Group Rebalances</h3></summary>
+     <img src="./img/consumer_group_rebalances.png" title="Kafka Consumer: Consumer Group Rebalances">  
+  </details>
+
+
 </details>
 
 <hr>
