@@ -22,7 +22,6 @@ Within the directory:
   Producer client applications influence Kafka throughput scalability by distributing messages they produce across the available partitions assigned to the topic they are writing to.
 
   <br>
-  <br>
 
   <h4>Two Methods for Distributing Messages across Topic Partitions:</h4>
   <details>
