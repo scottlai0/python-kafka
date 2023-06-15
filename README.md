@@ -28,6 +28,7 @@
   <img src="./img/producer_flow.png" title="Kafka Producer Overview">
 
   <b>Config Parameters:</b>
+  * When data is written to a particular partition, by defaul, data will be replicated into the other replicas. ```acks``` = 1 will ensure data resilience, set = 0 for ```jesus take the wheel```.
   * By default, one record is sent at a time. ```batch.size``` can be changed to better utilize compute and network resources.  
   * To prevent duplication of the same data due to Producer-Broker connection issues, set ```enable.idempotence``` = 1
   * If data sequence is important, set ```max.in.inflight.request.per.connection``` = 1
