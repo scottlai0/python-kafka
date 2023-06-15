@@ -15,6 +15,9 @@ Within the directory:
 
 <hr>
 
+### Producer Overview
+<img src="./img/producer_flow.png" title="Kafka Producer Overview">
+
 ## Python
 Start the Kafka Python file ```main.py``` using 
 ```
@@ -90,6 +93,7 @@ Topic name = experiments.latest (different name from experiments)
 <hr>
 
 # Producer & Consumer API
+
 ## Using Command Line:
 ### Start Producer
 ```
