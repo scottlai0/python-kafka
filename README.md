@@ -27,6 +27,7 @@
   <details open>
   
     <summary><h3>Detailed Overview of Kafka Producer</h3></summary>
+    
     <img src="./img/producer_flow.png" title="Kafka Producer Overview">
   
     <b>Config Parameters:</b>
