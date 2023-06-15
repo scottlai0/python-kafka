@@ -28,6 +28,8 @@
     <summary><h3>Detailed Overview of Kafka Producer</h3></summary>
     <img src="./img/producer_flow.png" title="Kafka Producer Overview">    
     <b>Config Parameters:</b>
+    <br>
+    
     * ```linger.ms```: recommended to set to preserve some resources (~100ms).
     
     * ```batch.size```: By default, one record is sent at a time. ```batch.size``` can be changed to better utilize compute and network resources.  
