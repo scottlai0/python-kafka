@@ -16,7 +16,7 @@ Within the directory:
 <hr>
 
 ## Python
-Start the Kafka service using 
+Start the Kafka Python file ```main.py``` using 
 ```
 > uvicorn main:app --reload
 ```
