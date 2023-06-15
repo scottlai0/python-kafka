@@ -21,8 +21,8 @@ Within the directory:
   <img src="./img/producer_flow.png" title="Kafka Producer Overview">
 </details>
 
-## Using Python
 <details>
+  <summary>Using Python</summary>
   Start the Kafka Python file ```main.py``` using 
   ```
   > uvicorn main:app --reload
