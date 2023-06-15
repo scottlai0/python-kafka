@@ -26,14 +26,19 @@ Within the directory:
 
   Two Methods for Dsitributing Messages across Topic Partitions:
   <details>
-    <summary>Message Key Hashing Algorithm</summary>
+    <summary><b>Message Key Hashing Algorithm</b></summary>
     <ul>
       <li>If a message key is specified then the producer client performs a hash based calculation for aprtition assignment</li>
       <li>hash(key) % num partitions</li>
       <li>All messages that share the same key will be colocated in the same partition maintained in order of arrival to Kafka</li>
     </ul>
   </details>
-  <li>Round Robin</li>
+  <details>
+    <summary><b>Round Robin</b></summary>
+    <ul>
+      <li>If no message key is specified then the producer client distributes the messages it produces round robin style across the partitions</li>
+    </ul>
+  </details>
   
 
   <hr>
