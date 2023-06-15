@@ -64,3 +64,19 @@ Topic name = experiments.latest (different name from experiments)
 > docker exec -it cli-tools kafka-topics --boostrap-server broker0:29092 --create --topic experiments.latest -config cleanup.policy=compact
 ```
 
+<hr>
+# Producer & Consumer
+## Start Producer
+```
+> docker exec -it cli-tools kafka-console-producer --bootstrap-server broker0:29092 --topic people
+```
+## Start Consumer
+```
+> docker exec -it cli-tools kafka-console-consumer --bootstrap-server broker0:29092 --topic people --from-beginning
+```
+Within Producer CLI, try typing the following:
+```
+> {"name":"Martin Fowler", "title":"Chief Scientist"}
+> {"name":"Zhamak Dehghani", "title":"Direct Tech Innovation"}
+```
+The consumer CLI should reflect the changes accordingly.
