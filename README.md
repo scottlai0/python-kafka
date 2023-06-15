@@ -22,7 +22,7 @@ Within the directory:
 </details>
 
 ## Using Python
-<detail>
+<details>
   Start the Kafka Python file ```main.py``` using 
   ```
   > uvicorn main:app --reload
@@ -38,7 +38,7 @@ Within the directory:
   > http POST :8088/api/people count:=3
   ```
   The Consumer should should show any data if available.
-</detail>
+</details>
 
 <hr>
 
