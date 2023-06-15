@@ -1,4 +1,4 @@
-<details>
+<details open>
   <summary><h1>Producer</h1></summary>
   
   <h3>Producers Influence Throughput via Partitions</h3>
