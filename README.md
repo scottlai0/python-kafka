@@ -15,9 +15,22 @@ Within the directory:
 
 <hr>
 
-### Producer
 <details>
+  <summary><h2>Producer</h2></summary>
+  
   <h4>Producers Influence Throughput via Partitions</h4>
+  Producer client applications influence Kafka throughput scalability by distributing messages they produce across the available partitions assigned to the topic they are writingt o.
+  <br>
+
+  Two Methods for Dsitributing Messages across Topic Partitions:
+  <ul>
+    <li>Message Key Hashing Algorithm</li>
+    <li>Round Robin</li>
+  </ul>
+  
+
+  <hr>
+  
   <img src="./img/producer_flow.png" title="Kafka Producer Overview">
 </details>
 
