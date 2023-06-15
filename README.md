@@ -128,7 +128,6 @@
   
   # Producer & Consumer API
   
-  ## Using Command Line:
   ### Start Producer
   ```
   > docker exec -it cli-tools kafka-console-producer --bootstrap-server broker0:29092 --topic people
