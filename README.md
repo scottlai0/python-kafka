@@ -41,11 +41,9 @@
 * ```retries```: defaulted to a reasonably significant value
 
 * ```delivery.timeout.ms```: defaulted to a reasonably significant value
-  </details>
+</details>
 
 
-
-  
 </details>
 
 <details>
