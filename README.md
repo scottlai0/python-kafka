@@ -77,6 +77,8 @@ Topic name = experiments.latest (different name from experiments)
 Within Producer CLI, try typing the following:
 ```
 > {"name":"Martin Fowler", "title":"Chief Scientist"}
+```
+```
 > {"name":"Zhamak Dehghani", "title":"Direct Tech Innovation"}
 ```
 The consumer CLI should reflect the changes accordingly.
