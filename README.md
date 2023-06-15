@@ -1,5 +1,5 @@
 <details>
-  <summary><h2>Producer</h2></summary>
+  <summary><h1>Producer</h1></summary>
   
   <h3>Producers Influence Throughput via Partitions</h3>
   Producer client applications influence Kafka throughput scalability by distributing messages they produce across the available partitions assigned to the topic they are writing to.
