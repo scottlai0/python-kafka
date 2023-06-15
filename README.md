@@ -44,7 +44,7 @@
 <details>
   <summary><h2>Getting Started</h2></summary>  
   
-  Within the directory:
+  Within the directory with the settings configured in ```docker-composer.yml```
   ### Start up docker-composer
   ```
   > docker-composer up -d
