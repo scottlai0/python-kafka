@@ -28,6 +28,11 @@
   <img src="./img/producer_flow.png" title="Kafka Producer Overview">
 </details>
 
+<details>
+  <summary><h1>Consumer</h1></summary>
+</details>
+
+<hr>
 
 <details>
   <summary><h2>Getting Started</h2></summary>  
@@ -46,8 +51,6 @@
   > docker-composer down -v
   ```
 </details>
-
-<hr>
 
 <details>
   <summary><h2>Using Python</h2></summary>
@@ -68,8 +71,6 @@
   ```
   The Consumer should should show any data if available.
 </details>
-
-<hr>
 
 <details>
   <summary><h2>Using Command Line</h2></summary>
