@@ -28,7 +28,9 @@
   <img src="./img/producer_flow.png" title="Kafka Producer Overview">
 
   <li>By default, one record is sent at a time. ```batchsize``` can be changed to better utilize compute and network resources</li>
+  
   <li>To prevent duplication of the same data due to Producer-Broker connection issues, set ```enable.idempotence``` = 1</li>
+  
   <li>If data sequence is important, set ```max.in.inflight.request.per.connection``` = 1</li>
 </details>
 
