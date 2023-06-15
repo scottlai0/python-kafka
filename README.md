@@ -100,7 +100,7 @@ Include Keys
 ```
 > docker exec -it cli-tools kafka-console-consumer --bootstrap-server broker0:29092 --topic people --from-beginning --property "print.key=true"
 ```
-Including key-value in the Producer will be:
+Inputting key-value in the Producer will be as follows:
 ```
 > chief-scientist|{"name":"Martin Fowler", "title":"Chief Scientist"}
 > director-tech-innovation|{"name":"Zhamak Dehghani", "title":"Direct Tech Innovation"}
