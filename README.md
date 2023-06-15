@@ -23,7 +23,8 @@
   </details>
   
   <img src="./img/producer_high_level.png" title="Kafka Producer">
-  
+
+  <h3>Detailed Overview of Kafka Producer</h3>
   <img src="./img/producer_flow.png" title="Kafka Producer Overview">
 </details>
 
