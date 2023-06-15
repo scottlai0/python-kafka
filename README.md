@@ -26,6 +26,7 @@
 
   <h3>Detailed Overview of Kafka Producer</h3>
   <img src="./img/producer_flow.png" title="Kafka Producer Overview">
+  
   If data sequence is important, set ```max.in.inflight.request.per.connection``` = 1
 </details>
 
