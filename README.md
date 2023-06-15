@@ -67,11 +67,12 @@ Topic name = experiments.latest (different name from experiments)
 <hr>
 
 # Producer & Consumer
-## Start Producer
+## Using Command Line:
+### Start Producer
 ```
 > docker exec -it cli-tools kafka-console-producer --bootstrap-server broker0:29092 --topic people
 ```
-## Start Consumer
+### Start Consumer
 ```
 > docker exec -it cli-tools kafka-console-consumer --bootstrap-server broker0:29092 --topic people --from-beginning
 ```
