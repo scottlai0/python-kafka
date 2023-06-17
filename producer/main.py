@@ -56,14 +56,14 @@ async def startup_event():
     # Create new topic
     for topic in topics:
         try:
-            client.create_topics([topics])
+            client.create_topics([topic])
 
         except TopicAlreadyExistsError as e:
             logger.warning("Topic already exists")
 
     # To edit configs of existing topic
     cfg_resource_update = ConfigResource(
-        ConfigResource.TOPIC,
+        ConfigResourceType.TOPIC,
         os.environ['TOPICS_PEOPLE_BASIC_NAME'],
         configs = {'retention.ms': '360000'}
     )
@@ -110,11 +110,11 @@ class ErrorHandler:
 
 @app.post('/api/people', status_code=201, response_model=List[Person])
 async def create_people(cmd: CreatePeopleCommand):
-    people: List[Person] = []
 
+    people: List[Person] = []
     faker = Faker()
     producer = make_producer()
-
+    
     for _ in range(cmd.count):
         person = Person(id = int(uuid.uuid4()), name = faker.name(), title = faker.job().title())
         people.append(person)
@@ -122,7 +122,7 @@ async def create_people(cmd: CreatePeopleCommand):
         # Kafka keys and values are encoded to bytes (utf-8)
         producer.send(
             topic = os.environ['TOPICS_PEOPLE_ADV_NAME'],
-            key = people.title.lower().replace(r's+','-').encode('utf-8'),
+            key = person.title.lower().replace(r's+','-').encode('utf-8'),
             value = person.json().encode('utf-8')
         )\
             .add_callback(SuccessHandler(person))\
