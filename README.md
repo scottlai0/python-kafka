@@ -75,18 +75,18 @@
 <details>
   <summary><h2>Getting Started</h2></summary>  
   
-  Within the directory with the settings configured in ```docker-composer.yml```
-  ### Start up docker-composer
+  Within the directory with the settings configured in ```docker-compose.yml```
+  ### Start up docker-compose
   ```
-  > docker-composer up -d
+  > docker-compose up -d
   ```
-  ### Show state of composer
+  ### Show state of compose
   ```
   > docker-compose ps
   ```
   ### Turn off docker environment
   ```
-  > docker-composer down -v
+  > docker-compose down -v
   ```
 </details>
 
@@ -125,7 +125,7 @@
   ```
   
   ### Create Topic
-  Listing the partition and replication number will override the value specified inside the ```docker-composer.yml```
+  Listing the partition and replication number will override the value specified inside the ```docker-compose.yml```
   ```
   > docker exec -it cli-tools kafka-topics --boostrap-server --create broker0:29092 --topic people --partitions 3 --replication-factor 3
   ```
