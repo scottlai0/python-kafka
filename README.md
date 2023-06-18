@@ -103,7 +103,6 @@
   
 </details>
 
-<hr>
 
 <details open>
   <summary><h2>Confluent Schema Registry</h2></summary>
@@ -126,6 +125,9 @@
   </details>
       
 </details>
+
+
+<hr>
 
 <details>
   <summary><h2>Getting Started</h2></summary>  
