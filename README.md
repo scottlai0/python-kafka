@@ -90,7 +90,7 @@
   </details>
 
   <details open>
-    <summary>At Most Once Processing</summary>      
+    <summary>Exactly Once Processing</summary>      
     <img src="./img/consumer_manual_offset_commits_exactly_once_processing.png" title="Kafka Consumer: Consumer Manual Commit - Exactly Once Processing">      
   </details>
   
