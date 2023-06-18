@@ -59,26 +59,26 @@
   <summary><h2>Consumer</h2></summary>
 
   <details open>
-    <summary><h3>Consumer Group Offsets and Progress Tracking</h3></summary>
+  <summary><h3>Consumer Group Offsets and Progress Tracking</h3></summary>
     
-     <img src="./img/consumer_group_offsets.png" title="Kafka Consumer: Consumer Group Offsets">  
+  <img src="./img/consumer_group_offsets.png" title="Kafka Consumer: Consumer Group Offsets">  
      
   </details>
 
   <details open>
-    <summary><h3>Consumer Group Rebalances</h3></summary>
+  <summary><h3>Consumer Group Rebalances</h3></summary>
     
-    <img src="./img/consumer_group_rebalances.png" title="Kafka Consumer: Consumer Group Rebalances">
+  <img src="./img/consumer_group_rebalances.png" title="Kafka Consumer: Consumer Group Rebalances">
     
   </details>
 
   <details open>
-    <summary><h3>Offset Commit Settings</h3></summary>
+  <summary><h3>Offset Commit Settings</h3></summary>
 
   <details open>
-      <h4>Auto Commit Enabled</h4>
+  <h4>Auto Commit Enabled</h4>
     
-      <img src="./img/consumer_auto_commit_enabled.png" title="Kafka Consumer: Consumer Auto Commit Enabled">
+  <img src="./img/consumer_auto_commit_enabled.png" title="Kafka Consumer: Consumer Auto Commit Enabled">
       
   </details>
 
@@ -86,9 +86,9 @@
       <summary><h4>Auto Commit Disabled: Manual Commit</h4></summary>
       
   <details open>
-      <summary>At Least Once Processing</summary>
+  <summary>At Least Once Processing</summary>
       
-      <img src="./img/consumer_manual_offset_commits_at_least_once_processing.png" title="Kafka Consumer: Consumer Manual Commit - At Least Once Processing">  
+  <img src="./img/consumer_manual_offset_commits_at_least_once_processing.png" title="Kafka Consumer: Consumer Manual Commit - At Least Once Processing">  
       
   </details>
       
