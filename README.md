@@ -118,7 +118,7 @@
   </details>
 
   <details open>
-  <summary>Why use Confluent Schema Registry</summary>    
+  <summary><h3>Why use Confluent Schema Registry</h3></summary>    
     
   * Systems cannot avoid coupling to data. Its one of the things we cannot avoid being couple to because processes rely on data as inputs and often produce data which then become inputs to other downstream processes.
   * Data exhibits gravity in that it pulls architecture components towards it. (This means that the processes have a common dataset that they rely on, thereby coupling them.)
