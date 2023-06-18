@@ -264,7 +264,7 @@
   
   <br>
   
-  To change offsets for ALL partitions, you can use ```--to-earliest``` or ```--to-latest``` commands.
+  To change offsets for ALL partitions for a specific topic, you can use ```--to-earliest``` or ```--to-latest``` commands.
   ```
   > docker exec -it cli-tools kafka-consumer-groups --bootstrap-server broker0:29092 --reset-offsets --to-earliest --group people.adv.python.grp-0 --topic people.adv.python --execute
   ```
