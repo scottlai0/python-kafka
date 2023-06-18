@@ -241,4 +241,9 @@
   chief-scientist  {"name":"Martin Fowler", "title":"Chief Scientist"}
   director-tech-innvation  {"name":"Zhamak Dehghani", "title":"Direct Tech Innovation"}
   ```
+
+  <h3>Listing Consumer Groups</h3>
+  ```
+  > docker exec -it cli-tools kafka-consumer-groups --bootstrap-server broker0:29092 --list
+  ```
 </details>
