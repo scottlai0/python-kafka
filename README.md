@@ -67,7 +67,25 @@
      <img src="./img/consumer_group_rebalances.png" title="Kafka Consumer: Consumer Group Rebalances">  
   </details>
 
+  <details open>
+    <summary><h3>Offset Commit Settings</h3></summary>
+    <details open>
+      <h4>Auto Commit Enabled</h4>
+      <img src="./img/consumer_auto_commit_enabled" title="Kafka Consumer: Consumer Auto Commit Enabled">  
+    </details>
 
+    <details open>
+      <summary><h4>Auto Commit Disabled: Manual Commit</h4></summary>
+      
+      <details open>
+        <summary>At Least Once Processing</summary>
+        <img src="./img/consumer_auto_commit_enabled" title="Kafka Consumer: Consumer Auto Commit Enabled">  
+      </details>
+      
+    </details>
+
+  </details>
+  
 </details>
 
 <hr>
