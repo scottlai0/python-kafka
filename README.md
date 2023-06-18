@@ -83,6 +83,16 @@
     <summary>At Least Once Processing</summary>      
     <img src="./img/consumer_manual_offset_commits_at_least_once_processing.png" title="Kafka Consumer: Consumer Manual Commit - At Least Once Processing">      
   </details>
+
+  <details open>
+    <summary>At Most Once Processing</summary>      
+    <img src="./img/consumer_manual_offset_commits_at_most_once_processing.png" title="Kafka Consumer: Consumer Manual Commit - At Most Once Processing">      
+  </details>
+
+  <details open>
+    <summary>At Most Once Processing</summary>      
+    <img src="./img/consumer_manual_offset_commits_exactly_once_processing.png" title="Kafka Consumer: Consumer Manual Commit - Exactly Once Processing">      
+  </details>
   
       
   </details>
