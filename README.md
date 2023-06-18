@@ -76,7 +76,7 @@
   <summary><h3>Offset Commit Settings</h3></summary>
 
   <details open>
-  <h4>Auto Commit Enabled</h4>
+  <summary><h4>Auto Commit Enabled</h4></summary>
     
   <img src="./img/consumer_auto_commit_enabled.png" title="Kafka Consumer: Consumer Auto Commit Enabled">
       
