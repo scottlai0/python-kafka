@@ -117,7 +117,7 @@
   * Allows for safer evolution of schemas through compatibility guard
   </details>
 
-  <details>
+  <details open>
   <summary>Why use Confluent Schema Registry</summary>    
     
   * Systems cannot avoid coupling to data. Its one of the things we cannot avoid being couple to because processes rely on data as inputs and often produce data which then become inputs to other downstream processes.
