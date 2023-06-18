@@ -242,9 +242,13 @@
   director-tech-innvation  {"name":"Zhamak Dehghani", "title":"Direct Tech Innovation"}
   ```
 
-  <h3>Listing Consumer Groups</h3>
-  
+  <h3>Consumer Groups</h3>
+  Listing all consumer groups
   ```
   > docker exec -it cli-tools kafka-consumer-groups --bootstrap-server broker0:29092 --list
+  ```
+  To look at a specific group
+  ```
+  > docker exec -it cli-tools kafka-consumer-groups --bootstrap-server broker0:29092 --describe --group people.adv.python.grp-0
   ```
 </details>
