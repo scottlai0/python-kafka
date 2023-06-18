@@ -252,4 +252,12 @@
   ```
   > docker exec -it cli-tools kafka-consumer-groups --bootstrap-server broker0:29092 --describe --group people.adv.python.grp-0
   ```
+  To reset consumer offsets
+  e.g. Reset Group 0, Partition 0: to offset 5
+  ```
+  > docker exec -it cli-tools kafka-consumer-groups --bootstrap-server broker0:29092 --reset-offsets --to-offsets 5 --group people.adv.python.grp-0 --topic people.adv.python:0
+  ```
+  You can test the change in offset by adding a --dry-run
+  <br>
+  To change any offsets, the consumer needs to be stopped. You will need to wait a couple of seconds before Kafka realises the consumer is down.
 </details>
