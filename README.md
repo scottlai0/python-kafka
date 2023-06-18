@@ -105,6 +105,28 @@
 
 <hr>
 
+<details open>
+  <summary><h2>Confluent Schema Registry</h2></summary>
+
+  <details open>
+  <summary><h3>What is a Confluent Schema Registry</h3></summary>   
+    
+  A serving layer for your Kafka Architecture providing RESTful interface to store and manage the metadata about the messages you write to and read from Kafka
+  * Works with JSON, Protobuf, and Apache Avro (most common) schemas
+  * Provides a versioned history of your message's key and value schemas
+  * Allows for safer evolution of schemas through compatibility guard
+  </details>
+
+  <details>
+  <summary>Why use Confluent Schema Registry</summary>    
+    
+  * Systems cannot avoid coupling to data. Its one of the things we cannot avoid being couple to because processes rely on data as inputs and often produce data which then become inputs to other downstream processes.
+  * Data exhibits gravity in that it pulls architecture components towards it. (This means that the processes have a common dataset that they rely on, thereby coupling them.)
+  * The schema registry which recogizes and embraces this coupling with strong data exhcange contracts and controlled data evolution
+  </details>
+      
+</details>
+
 <details>
   <summary><h2>Getting Started</h2></summary>  
   
