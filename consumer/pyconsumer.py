@@ -3,6 +3,7 @@ import logging
 import os
 
 from dotenv import load_dotenv
+from kafka import TopicPartition, OffsetAndMetadata
 from kafka.consumer import KafkaConsumer
 
 logging.basicConfig(level=logging.INFO)
@@ -21,7 +22,7 @@ def value_deserializer(value):
 def main():
     logger.info(f"""
         Start Python consumer
-        for topic {os.environ['TOPICS_PEOPLE_BASIC_NAME']}
+        for topic {os.environ['TOPICS_PEOPLE_ADV_NAME']}
 
     """)
     
@@ -29,10 +30,11 @@ def main():
         bootstrap_servers = os.environ['BOOTSTRAP_SERVERS'],
         group_id = os.environ['CONSUMER_GROUP'],
         key_deserializer = key_deserializer,
-        value_deserializer = value_deserializer
+        value_deserializer = value_deserializer,
+        enable_auto_commit = False
     )
 
-    consumer.subscribe([os.environ['TOPICS_PEOPLE_BASIC_NAME']])
+    consumer.subscribe([os.environ['TOPICS_PEOPLE_ADV_NAME']])
 
     for record in consumer:
         logger.info(f"""
@@ -41,6 +43,13 @@ def main():
             from partition '{record.partition}'
             at offset {record.offset}
         """)
+
+        # This is required when auto commit is disabled. Refer to diagrams for details
+        topic_partition = TopicPartition(record.topic, record.partition)
+        offset = OffsetAndMetadata(record.offset + 1, record.timestamp)
+        consumer.commit({
+            topic_partition: offset
+        })
 
 
 if __name__ == "__main__":
