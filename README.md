@@ -261,7 +261,9 @@
   * You can test the change in offset by adding ```--dry-run``` at the end of the command.
   * To apply the offset changes, add ```--execute``` at the end of the command.
   * To change any offsets, the consumer needs to be stopped. You will need to wait a couple of seconds before Kafka realises the consumer is down.
+  
   <br>
+  
   To change offsets for ALL partitions, you can use ```--to-earliest``` or ```--to-latest``` commands.
   ```
   > docker exec -it cli-tools kafka-consumer-groups --bootstrap-server broker0:29092 --reset-offsets --to-earliest --group people.adv.python.grp-0 --topic people.adv.python --execute
