@@ -243,6 +243,7 @@
   ```
 
   <h3>Consumer Groups</h3>
+  
   Listing all consumer groups
   ```
   > docker exec -it cli-tools kafka-consumer-groups --bootstrap-server broker0:29092 --list
